@@ -55,7 +55,7 @@ $ conda env export > environment.yml
 
 First make sure the environment is active by running 
 ```bash
-$conda activate ucsd_algos
+$ conda activate ucsd_algos
 ```
 
 Then after you have updated the environment with some packages, save the new updated environment and override the previous .yml file. To do this, run the following.
