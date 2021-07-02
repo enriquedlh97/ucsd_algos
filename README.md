@@ -12,14 +12,8 @@ To get a working environment there are two possible options.
 ### Pre-requisites
 
 ```
-python 3.8
-matplotlib 3.3.2
-numpy 1.19.1
-pandas 1.1.3
-imbalanced-learn 0.6.2
-pytorch 1.7.0
-tqdm 4.54.1
-bayesian-optimization 1.1.0
+python 3.8.5
+unittest2 1.1.0
 ```
 
 ### Installation
@@ -32,7 +26,7 @@ $ conda env create -f environment.yml
 
 Make sure you activate the environment. 
 ```bash
-$ conda activate vrpResearch2
+$ conda activate ucsd_algos
 ```
 
 And verify that it was properly installed.
@@ -40,16 +34,16 @@ And verify that it was properly installed.
 $ conda env list
 ```
 
-Note: If you are not working on Windows then you should use the ```environmentNoBuilds.yml``` file instead of the ```environment.yml```  file for creating the environment because it excludes platform-specific builds. 
+Note: If you are not working on Windows then you should use the ```environment_bo_builds.yml``` file instead of the ```environment.yml```  file for creating the environment because it excludes platform-specific builds. 
 
 ### Updating environment files
-There are two environment files available, the first one is for creating an environment on Windows and the file name is ```environment.yml```. The second one is for crossplatform environments because the packages do not include platform-specific builds, the name of the file is ```environmentNoBuilds.yml```. Depending on the file that you are going to update the steps to follow are different. 
+There are two environment files available, the first one is for creating an environment on Windows and the file name is ```environment.yml```. The second one is for crossplatform environments because the packages do not include platform-specific builds, the name of the file is ```environment_no_builds.yml```. Depending on the file that you are going to update the steps to follow are different. 
 
 #### Updating Windows environment file
 
 First make sure the environment is active by running 
 ```bash
-$ conda activate vrpResearch2
+$ conda activate ucsd_algos
 ```
 
 Then after you have updated the environment with some packages, save the new updated environment and override the previous .yml file. To do this, run the following.
@@ -61,12 +55,12 @@ $ conda env export > environment.yml
 
 First make sure the environment is active by running 
 ```bash
-$conda activate vrpResearch2
+$conda activate ucsd_algos
 ```
 
 Then after you have updated the environment with some packages, save the new updated environment and override the previous .yml file. To do this, run the following.
 ```bash
-$ conda env export -n vrpResearch2 -f environmentNoBuilds.yml --no-builds
+$ conda env export -n ucsd_algos -f environment_no_builds.yml --no-builds
 ```
 
 ### Setting up the PYTHONPATH
