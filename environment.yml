@@ -1,14 +1,17 @@
 name: ucsd_algos
 channels:
   - anaconda
+  - conda-forge
   - defaults
 dependencies:
-  - ca-certificates=2020.10.14=0
-  - certifi=2020.6.20=py38_0
+  - ca-certificates=2021.5.30=h5b45459_0
+  - certifi=2021.5.30=py38haa244fe_0
   - linecache2=1.0.0=py_1
-  - openssl=1.1.1h=he774522_0
+  - openssl=1.1.1k=h8ffe710_0
+  - parameterized=0.8.1=pyhd3deb0d_0
   - pip=20.2.4=py38_0
   - python=3.8.5=h5fd99cc_1
+  - python_abi=3.8=2_cp38
   - setuptools=50.3.0=py38h9490d1a_1
   - six=1.15.0=py_0
   - sqlite=3.36.0=h2bbff1b_0
