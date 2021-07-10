@@ -86,6 +86,16 @@ $ echo $PYTHONPATH
 
 Note: For more information on PYTHONPATH and how to set it permanently see [this](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html)
 
+## Tests
+For running all tests write:
+```
+python -m unittest discover tests
+```
+For running some specific tests write (e.g. two_number_sum):
+```
+python tests/test_sum_of_two_digits.py
+```
+
 ## Note on .gitignore
 
 The ``` .gitignore ``` file was generated with [gitignore.io](https://www.toptal.com/developers/gitignore) adding the tags for ```python```, ```jupyternotebooks``` and ```pycharm```.
