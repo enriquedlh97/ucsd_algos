@@ -21,6 +21,9 @@ Output:
 # Space: O(1)
 def max_pairwise_product_brute_force(array):
 
+    if len(array) <= 1:
+        return 0
+
     max_product = 0
 
     for i in range(len(array)):
@@ -35,6 +38,9 @@ def max_pairwise_product_brute_force(array):
 # Time: O(n * lg(n)) where n is the length of the input array
 # Space: O(1)
 def max_pairwise_product_sort(array):
+    if len(array) <= 1:
+        return 0
+
     array.sort()
 
     return array[-1] * array[-2]
@@ -43,6 +49,10 @@ def max_pairwise_product_sort(array):
 # Time: O(n) where n is the length of the input array
 # Space: O(1)
 def max_pairwise_product_linear(array):
+
+    if len(array) <= 1:
+        return 0
+
     two_biggest_values = [0, 0]
 
     for element in array:
