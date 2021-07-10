@@ -18,5 +18,13 @@ class TestSumOfTwoDigits(unittest.TestCase):
         self.assertEqual(max_pairwise_product_brute_force(self.array), self.answer)
 
 
+    def test_max_pairwise_product_sort(self):
+        self.assertEqual(max_pairwise_product_sort(self.array), self.answer)
+
+
+    def test_max_pairwise_product_linear(self):
+        self.assertEqual(max_pairwise_product_linear(self.array), self.answer)
+
+
 if __name__ == '__main__':
     unittest.main()
