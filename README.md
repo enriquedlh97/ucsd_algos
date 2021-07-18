@@ -14,6 +14,7 @@ To get a working environment there are two possible options.
 ```
 python 3.8.5
 unittest2 1.1.0
+parameterized 0.8.1
 ```
 
 ### Installation
